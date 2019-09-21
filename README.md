@@ -74,7 +74,10 @@ the `apply_coupons` method might take in a consolidated cart that looks like thi
 and an array containing a single coupon for avocados that looks like this:
 
 ```ruby
-[{:item => "AVOCADO", :num => 2, :cost => 5.00}]
+[
+  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "AVOCADO", :num => 2, :cost => 5.00}
+]
 ```
 
 then `apply_coupons` should return the following hash:
