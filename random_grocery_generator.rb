@@ -55,3 +55,34 @@ coupons.each do |coupon|
 end
 
 puts "Your total is #{checkout(cart: cart, coupons: coupons)}"
+
+def consolidate_cart(items)
+  hash = Hash.new(0)
+  items.each do 
+  hash
+end 
+
+# describe "#consolidate_cart" do
+#     it "adds a count of one to each item when there are no duplicates" do
+#       cart = [find_item('TEMPEH'), find_item('PEANUTBUTTER'), find_item('ALMONDS')]
+#       result = consolidate_cart(cart)
+#       result.each do |item, attributes|
+#         expect(attributes.keys).to include(:count)
+#         expect(attributes[:count]).to eq(1)
+#       end
+#     end
+
+#     it "increments count when there are multiple items" do
+#       avocado = find_item('AVOCADO')
+#       cart = [avocado, avocado, find_item('KALE')]
+
+#       result = consolidate_cart(cart)
+#       expect(result["AVOCADO"][:price]).to eq(3.00)
+#       expect(result["AVOCADO"][:clearance]).to eq(true)
+#       expect(result["AVOCADO"][:count]).to eq(2)
+
+#       expect(result["KALE"][:price]).to eq(3.00)
+#       expect(result["KALE"][:clearance]).to eq(false)
+#       expect(result["KALE"][:count]).to eq(1)
+#     end
+#   end
